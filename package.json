@@ -15,8 +15,9 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project ./tsconfig.json -t stylish",
-    "run": "cd out && node index.js",
-    "upgrade-remarkable-typescript": "npm upgrade reMarkable-typescript && cd node_modules/remarkable-typescript && npm install && npm run prepare"
+    "bot": "cd out && node index.js",
+    "upgrade-remarkable-typescript": "npm upgrade reMarkable-typescript && cd node_modules/remarkable-typescript && npm install && npm run prepare",
+    "setup": "npm install && npm run build && npm run upgrade-remarkable-typescript"
   },
   "devDependencies": {
     "@types/uuid": "^8.3.4",
