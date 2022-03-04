@@ -203,11 +203,12 @@ export default class MatrixEventHandler {
 
     private async sendHelpMsg(roomId: string) {
         const help =
-            "This bot can be used to send PDFs to the reMarkable™ cloud.\n\n" +
+            "This bot can be used to send PDFs and URLs (as PDFs) to the reMarkable™ cloud.\n" +
+            "Just send me a PDF, or type an URL and I'll send it to your Markable™!\n\n" +
             "Commands:\n" +
             "    - help: Prints this help message.\n" +
             "    - register: Registers this bot in the reMarkable™ cloud.\n" +
-            "    - list: Lists all items in the reMarkable™ cloud.";
+            "    - list: Lists all items in the reMarkable™ cloud (in an ugly way, for now).";
 
         await this.client.sendMessage(roomId, {
             "msgtype": "m.notice",
