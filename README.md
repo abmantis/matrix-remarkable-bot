@@ -1,6 +1,10 @@
 # Matrix reMarkable Bot
 A Matrix chat bot that can send files and webpages to the reMarkable tablet, using reMarkable's cloud.
 
+# WARNING
+
+**There is no user restrictions or multiuser support implemented yet, so anyone who knows your bot's username, can use your it (and send files to *your* RM).**
+
 # How to use
 Currently, the only way to use this is to clone or download this repo. After you do it, follow the following instructions:
 
